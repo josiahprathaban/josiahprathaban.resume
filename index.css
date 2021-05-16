@@ -1,0 +1,190 @@
+body{
+    margin: 0%;
+    position: relative;
+}
+svg{
+    z-index: -1;
+    position: absolute;
+}
+path{
+    fill : url(#gradient)
+}
+
+.content{
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+    z-index: 99;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 50vh;
+    padding: 10% 10% 0 10%;
+}
+
+.dp{
+    overflow: hidden;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.header h1{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.header h2{
+    margin-top: -20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.header h3{
+    margin-top: -15px;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.right{
+    padding: 20px;
+    border-left: solid 1px  #007e69 ;
+    margin-top: 150px;
+}
+
+p{
+     font-size: 15px;
+     font-weight: 300;
+     line-height: 20px;
+     text-align: justify;
+     text-justify: inter-word;
+ }
+
+ button{
+     right: 100px;
+     position: absolute;
+     bottom: -100px;
+     padding: 20px;
+     outline: none;
+     border: none;
+     border-radius: 20px;
+     background: linear-gradient(80deg, #007e69b2 0%, #00cba9c0 100%);
+     color: white;
+     font-size: 15px;
+     font-weight: 600;
+     cursor:pointer;
+ }
+
+ button:hover{
+    background: linear-gradient(80deg, #007e69 0%, #00cba9 100%);
+
+ }
+
+
+/* Personal Info */
+.personal_info{
+    margin-top: 100px;
+}
+ .personal_info h1{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 10px;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+}
+
+.info img{
+    width: 30px;
+}
+
+.personal_info h3{
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+ @media print {
+    body * {
+        visibility: hidden;
+        -webkit-print-color-adjust: exact !important;      
+    }
+
+    .content {
+        padding: 0px;
+    }
+
+    .content * {
+        visibility: visible;
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    .left{
+        margin-right: 20px;
+    }
+
+    .dp{
+        position: relative;
+        margin: auto;
+    }
+
+    .header h1{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    
+    .header h2{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        margin-top: -15px;
+    }
+    .header h3{
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 10px;
+        font-weight: 300;
+        margin-top: -10px;
+    }
+
+    .right{
+        padding: 0 20px;
+        border-left: solid 0.5px rgb(175, 175, 175);
+        margin-top: 0px;
+    }
+
+    p{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+
+    .personal_info{
+        border-top: solid 0.5px rgba(175, 175, 175, 0.329);
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+
+    .info img{
+        width: 20px;
+    }
+
+    .info{
+        display: grid;
+        grid-template-columns: 30px auto;
+        align-items: center;
+    }
+
+    .personal_info h3{
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .personal_info h1{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+}
