@@ -2,6 +2,11 @@ body{
     margin: 0%;
     position: relative;
 }
+
+::selection {
+    color: white;
+    background: #67b9ac;
+  }
 svg{
     z-index: -1;
     position: absolute;
@@ -71,10 +76,12 @@ p{
      font-size: 15px;
      font-weight: 600;
      cursor:pointer;
+     box-shadow: 0px 3px 5px #00000038;
  }
 
  button:hover{
     background: linear-gradient(80deg, #007e69 0%, #00cba9 100%);
+    box-shadow: 0px 5px 5px #00000038;
 
  }
 
@@ -86,7 +93,6 @@ p{
  .personal_info h1{
     font-size: 25px;
     font-weight: 400;
-    line-height: 10px;
 }
 
 .info{
@@ -103,6 +109,66 @@ p{
     letter-spacing: 1px;
     font-size: 15px;
     font-weight: 300;
+}
+
+/* section */
+
+.section{
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.section h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+ .section h3{
+     margin: 10px 0;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.section h2{
+   margin-top: -10px;
+   letter-spacing: 1px;
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.section li{
+    display:inline-block;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 300;
+    padding-right: 15px;
+    margin-bottom: 10px;
+ }
+
+ .section li::before {content: "•"; color: #007e69}
+
+.lan{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.section h4{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.section h5{
+    margin-top: -15px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.section h6{
+    margin:5px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
  @media print {
@@ -187,4 +253,54 @@ p{
         font-weight: 400;
     }
     
+    .section{
+        border-top: solid 0.5px rgba(175, 175, 175, 0.329);
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+    .section h1{
+        font-size: 18px;
+        font-weight: 400;
+    }
+     .section h3{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .section h2{
+        font-size: 13px;
+     }
+
+
+        
+}
+
+@media screen and (max-width: 660px) {
+    .content{
+
+        display: block;
+        padding: 10% 10% 0 10%;
+    }
+
+    .right{
+        padding: 0 20px;
+        border-left: solid 1px  #007e69 ;
+        margin-top: 30px;
+    }
+
+    .personal_info{
+        border-top: solid 0.5px rgba(175, 175, 175, 0.329);
+        border-bottom: solid 0.5px rgba(175, 175, 175, 0.329);
+        margin-top: 30px;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    button{
+        right: 50px;
+        position: absolute;
+        bottom: -80px;
+       
+    }
+   
 }
