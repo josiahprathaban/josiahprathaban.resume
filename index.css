@@ -15,6 +15,7 @@ path{
     fill : url(#gradient)
 }
 
+
 .content{
 
     display: grid;
@@ -27,9 +28,15 @@ path{
 
 .dp{
     overflow: hidden;
-    border-radius: 100px;
+    border-radius: 200px;
     width: 200px;
     height: 200px;
+    border: #007e694f solid 1px;
+    padding: 5px;
+    
+}
+.dp img{
+    border-radius: 100px;
 }
 
 .header h1{
@@ -268,6 +275,10 @@ p{
     }
     .section h2{
         font-size: 13px;
+     }
+
+     .star{
+         display: none;
      }
 
 
