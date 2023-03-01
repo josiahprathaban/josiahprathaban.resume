@@ -37,6 +37,7 @@ path {
 
 .dp img {
     border-radius: 100px;
+    /* filter: grayscale(100%); */
 }
 
 .header h1 {
