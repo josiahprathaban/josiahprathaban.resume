@@ -1,14 +1,14 @@
-﻿:root {
+:root {
     color-scheme: light;
-    --ink: #242632;
-    --muted: #656575;
-    --accent: #4942cf;
-    --line: #dedee9;
+    --ink: #24382f;
+    --muted: #637269;
+    --accent: #24734e;
+    --line: #dbe5dc;
     --paper: #fffefa;
-    --rail: #f0eff8;
+    --rail: #edf3eb;
     font-family: "Segoe UI", Arial, sans-serif;
     color: var(--ink);
-    background: #e5e4e9;
+    background: #e4eae3;
     font-synthesis: none;
 }
 * { box-sizing: border-box; }
@@ -24,16 +24,16 @@ p, h1, h2, h3, dl, dd { margin: 0; }
 .toolbar-label { font-weight: 400; color: var(--muted); margin-left: 6px; }
 .actions { display: flex; align-items: center; gap: 12px; }
 button, .download { display: inline-flex; align-items: center; justify-content: center; gap: 20px; border-radius: 3px; padding: 11px 16px; font: inherit; font-weight: 600; cursor: pointer; }
-button { border: 1px solid #c7c6d1; color: var(--ink); background: transparent; }
+button { border: 1px solid #c4d0c5; color: var(--ink); background: transparent; }
 .download { background: var(--ink); color: white; border: 1px solid var(--ink); }
 .download:hover { color: white; background: var(--accent); border-color: var(--accent); text-decoration: none; }
 .download span { font-size: 17px; line-height: 1; }
 .resume { max-width: 794px; margin: 0 auto 48px; }
-.page { position: relative; isolation: isolate; display: flex; flex-direction: column; min-height: 1123px; padding: 42px 40px 23px; margin-bottom: 28px; background: var(--paper); box-shadow: 0 8px 44px #24263212; }
+.page { position: relative; isolation: isolate; display: flex; flex-direction: column; min-height: 1123px; padding: 42px 40px 23px; margin-bottom: 28px; background: var(--paper); box-shadow: 0 8px 44px #24382f12; }
 .page::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 7px; background: var(--accent); }
 .hero { display: grid; grid-template-columns: 200px 1fr; gap: 30px; align-items: center; padding-bottom: 30px; }
 .portrait-wrap { width: 162px; margin: 0 auto; position: relative; }
-.portrait-wrap::before { content: ""; position: absolute; inset: 10px -10px -10px 10px; border: 1px solid #b4b0e9; z-index: -1; }
+.portrait-wrap::before { content: ""; position: absolute; inset: 10px -10px -10px 10px; border: 1px solid #adc9ad; z-index: -1; }
 .portrait { width: 162px; height: 171px; display: block; object-fit: cover; object-position: center 24%; }
 .eyebrow { display: flex; align-items: center; gap: 7px; font-size: 8.5px; text-transform: uppercase; letter-spacing: 1.4px; font-weight: 700; color: var(--accent); margin-bottom: 14px; }
 .eyebrow > span { display: block; width: 6px; height: 6px; background: var(--accent); }
@@ -47,8 +47,8 @@ h2 { font-size: 10px; text-transform: uppercase; letter-spacing: 1.6px; line-hei
 .main-column > section > h2 { display: flex; gap: 12px; align-items: center; margin-bottom: 20px; }
 .main-column > section > h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 .rail h2 { font-size: 9px; letter-spacing: 1.5px; margin-bottom: 12px; }
-.rail p { font-size: 11.5px; line-height: 1.65; color: #50505f; }
-.rail section + section { margin-top: 28px; padding-top: 22px; border-top: 1px solid #d7d6e6; }
+.rail p { font-size: 11.5px; line-height: 1.65; color: #4f6054; }
+.rail section + section { margin-top: 28px; padding-top: 22px; border-top: 1px solid #d2dfd0; }
 .location { font-weight: 600; margin-bottom: 13px; color: var(--ink) !important; }
 .contact { display: flex; flex-direction: column; gap: 13px; font-size: 10px; font-style: normal; letter-spacing: -.15px; }
 .contact a { overflow-wrap: anywhere; }
@@ -57,10 +57,10 @@ h2 { font-size: 10px; text-transform: uppercase; letter-spacing: 1.6px; line-hei
 .contact a:nth-child(2)::before { content: "Phone"; }
 .contact a:nth-child(3)::before { content: "LinkedIn"; }
 .contact a:nth-child(4)::before { content: "GitHub"; }
-.rail-signature { display: flex; align-items: center; gap: 16px; margin-top: auto; padding-top: 35px; color: #b1adcf; }
+.rail-signature { display: flex; align-items: center; gap: 16px; margin-top: auto; padding-top: 35px; color: #a7bfa4; }
 .rail-signature span { font-size: 46px; line-height: 1; font-weight: 750; letter-spacing: -5px; }
-.rail-signature i { height: 1px; background: #cfccdf; flex: 1; }
-.entry { position: relative; padding-left: 16px; border-left: 1px solid #d8d7e6; }
+.rail-signature i { height: 1px; background: #c8d8c4; flex: 1; }
+.entry { position: relative; padding-left: 16px; border-left: 1px solid #d2dfd0; }
 .entry::before { content: ""; position: absolute; width: 5px; height: 5px; left: -3px; top: 6px; background: var(--accent); border-radius: 50%; }
 .entry + .entry { margin-top: 21px; }
 .entry-heading { display: flex; flex-direction: column; gap: 3px; }
@@ -71,9 +71,9 @@ h3 { font-size: 13px; line-height: 1.35; font-weight: 700; letter-spacing: -.1px
 .organization span { color: var(--muted); font-weight: 400; font-size: 10px; }
 ul { margin: 9px 0 0; padding-left: 13px; }
 li { margin-bottom: 4px; padding-left: 1px; font-size: 11.5px; line-height: 1.5; }
-li::marker { color: #8c88ad; font-size: 8px; }
+li::marker { color: #89a083; font-size: 8px; }
 .page-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 18px; font-size: 8px; letter-spacing: .4px; color: var(--muted); }
-.footer-divider { color: #b0adbf; margin: 0 7px; }
+.footer-divider { color: #acbba8; margin: 0 7px; }
 .page-number { font-size: 11px; font-weight: 700; color: var(--accent); }
 .page-number > span { font-size: 9px; color: var(--muted); font-weight: 400; }
 .continuation { display: flex; align-items: center; justify-content: space-between; padding: 0 0 24px; margin-bottom: 27px; border-bottom: 1px solid var(--line); gap: 16px; }
@@ -89,7 +89,7 @@ li::marker { color: #8c88ad; font-size: 8px; }
 .project-link { display: block; margin-top: 5px; font-size: 9px; color: var(--accent); font-weight: 500; letter-spacing: 0; overflow-wrap: anywhere; }
 .skills > div + div { margin-top: 16px; }
 .skills dt { font-size: 11px; font-weight: 700; margin-bottom: 5px; }
-.skills dd { font-size: 10.5px; line-height: 1.65; color: #50505f; }
+.skills dd { font-size: 10.5px; line-height: 1.65; color: #4f6054; }
 .rail #education-heading + .entry-heading h3 { font-size: 12px; }
 .rail #education-heading + .entry-heading { gap: 6px; margin-bottom: 7px; }
 .rail .education-detail { display: block; font-weight: 600; margin-top: 4px; color: var(--accent); }
