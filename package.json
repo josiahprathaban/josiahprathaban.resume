@@ -1,0 +1,12 @@
+﻿{
+  "name": "josiah-prathaban-cv",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Josiah Prathaban's static HTML CV and PDF export",
+  "scripts": {
+    "build:pdf": "node scripts/export-pdf.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.64.1"
+  }
+}
